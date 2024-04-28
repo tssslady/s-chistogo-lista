@@ -1,0 +1,286 @@
+body {
+  margin: 0;
+  background-color: #000000;
+  font-family: 'Inter', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6, p, ul, ol, blockquote {
+  margin: 0;
+  padding: 0;
+}
+
+.content-section {
+  width: 360px;
+  margin: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  box-sizing: border-box;
+}
+
+.content-section_theme_dark {
+  background-color: #131313;
+  color: white;
+}
+
+.content-section_theme_bright {
+  background-color: #fee42a;
+  color: black;
+}
+
+header {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 24px 20px;
+}
+
+.header__logo {
+  margin-right: auto;
+}
+
+.header__logo-image {
+  height: 15.43px;
+  width: 78.45px;
+}
+
+.header__menu {
+  margin-left: auto;
+}
+
+.header__menu-list {
+  display: flex;
+  list-style: none;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.header__menu-item {
+  margin-bottom: 0;
+}
+
+.header__menu-link {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+  font-family: 'Inter', sans-serif;
+}
+
+.header__menu-item_active .header__menu-link {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+.cover {
+  background-image: url('images/cover.svg');
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: 95% auto;
+  display: block;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cover__title {
+  font-family: 'EB Garamond', serif;
+  font-weight: normal;
+  font-size: 72px;
+  line-height: 1;
+}
+
+.accent-span {
+  display: block;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.intro {
+  padding-bottom: 38px;
+}
+
+.intro__title,
+.intro__date,
+.intro__heading,
+.intro__main-text {
+  font-size: 16px;
+  font-family: 'Inter', sans-serif;
+}
+
+.intro__date {
+  white-space: nowrap;
+}
+
+.intro__heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  color: #CCCCCC;
+}
+
+.intro__title {
+  padding-top: 30px;
+  font-weight: normal;
+  overflow-wrap: break-word;
+  max-width: 60%;
+}
+
+.intro__main-text p {
+  padding-top: 24px;
+}
+
+.intro__main-text {
+  line-height: 1.4;
+}
+
+.reasons {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.content-section__subtitle {
+  font-family: 'EB Garamond', serif;
+  font-size: 28px;
+  font-weight: medium;
+  display: block;
+  justify-content: space-between;
+  align-items: center;
+  line-height: 1.1;
+}
+
+.content-section__introduction {
+  font-family: 'Inter', sans-serif;
+  font-size: 20px;
+  font-weight: normal;
+  padding-top: 32px;
+}
+
+.content-section__list {
+  padding: 32px 20px 0 20px;
+  line-height: 1.35;
+}
+
+.content-section__list-item {
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  margin-bottom: 16px;
+}
+
+.content-section__list-accent {
+  font-weight: 700;
+}
+
+.how-to {
+  padding-top: 40px;
+  padding-bottom: 60px;
+}
+
+.how-to .content-section__introduction {
+  padding-bottom: 32px;
+}
+
+.cards-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.card {
+  background-color: #343434;
+  color: #fff;
+  border-radius: 30px;
+  padding: 20px;
+}
+
+.card_theme_bright {
+  background-color: #FEE42A;
+  color: #000;
+}
+
+.card__author {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 8px;
+}
+
+.card_theme_dark .card__author {
+  margin-bottom: 0;
+}
+
+.card__author-photo {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-bottom: 8px;
+}
+
+.card__author-name {
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.card__content {
+  display: flex;
+  flex-direction: column;
+}
+
+.card__title {
+  font-family: 'EB Garamond', serif;
+  font-size: 22px;
+  font-weight: 500;
+  margin-top: 0;
+  margin-bottom: 8px;
+}
+
+.card_text-only .card__title {
+  margin-top: 8px;
+}
+
+.card__text {
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 21.6px;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #000;
+  color: #fff;
+  font-family: 'Inter', sans-serif;
+  border-top: 1px solid #fee42a;
+}
+
+.footer__copy {
+  font-size: 16px;
+  font-weight: normal;
+}
+
+.footer__links {
+  display: flex;
+  list-style: none;
+  gap: 16px;
+}
+
+.footer__link {
+  color: #fff;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 400;
+}
